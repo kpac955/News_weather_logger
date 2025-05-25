@@ -7,7 +7,7 @@ from src.config import API_KEY, BASE_URL
 
 logger = logging.getLogger('news')
 logger.setLevel(logging.INFO)
-file_handler = logging.FileHandler('logs/news.log')
+file_handler = logging.FileHandler('logs/news.log', encoding='windows-1251')
 file_formater = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 file_handler.setFormatter(file_formater)
 logger.addHandler(file_handler)
