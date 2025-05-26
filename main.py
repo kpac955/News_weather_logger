@@ -6,7 +6,7 @@ from src.save_to_file import save_to_file
 
 logger = logging.getLogger('main')
 logger.setLevel(logging.INFO)
-file_handler = logging.FileHandler('logs/main.log', encoding="cp1251")
+file_handler = logging.FileHandler('logs/main.log', encoding="utf-8")
 file_formater = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 file_handler.setFormatter(file_formater)
 logger.addHandler(file_handler)
